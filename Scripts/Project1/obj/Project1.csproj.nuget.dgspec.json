@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\source\\repos\\Project1\\Project1\\Project1.csproj": {}
+    "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\Project1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\source\\repos\\Project1\\Project1\\Project1.csproj": {
+    "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\Project1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\source\\repos\\Project1\\Project1\\Project1.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\Project1.csproj",
         "projectName": "PrimeVrLematScripts",
-        "projectPath": "C:\\Users\\gabri\\source\\repos\\Project1\\Project1\\Project1.csproj",
+        "projectPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\Project1.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\source\\repos\\Project1\\Project1\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",

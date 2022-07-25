@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "3dUJVyojoAWwK+piVw8Q/GWZ76qEQeU1SyME2VYR6mOff4CwzQO6qHWkVPGfsAxMRbLu67nPnCwL/qTSF2mW9w==",
+  "dgSpecHash": "+tKCXi/+vjeIsTyOXvB0zE4/iOZzFMPhZ2OTXvxRZtJ3q+fgQnGbdJq9KqU0Jeb35rF+KXAoYpTTo62ZLGlGGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\source\\repos\\Project1\\Project1\\Project1.csproj",
+  "projectFilePath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\Project1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\bepinex.baselib\\5.4.19\\bepinex.baselib.5.4.19.nupkg.sha512",
-    "C:\\Users\\gabri\\.nuget\\packages\\bepinex.core\\6.0.0-be.570\\bepinex.core.6.0.0-be.570.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\bepinex.core\\6.0.0-be.572\\bepinex.core.6.0.0-be.572.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\bepinex.plugininfoprops\\1.1.0\\bepinex.plugininfoprops.1.1.0.nupkg.sha512",
-    "C:\\Users\\gabri\\.nuget\\packages\\bepinex.unity\\6.0.0-be.570\\bepinex.unity.6.0.0-be.570.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\bepinex.unity\\6.0.0-be.572\\bepinex.unity.6.0.0-be.572.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\h3vr.gamelibs\\0.104.0-r.0\\h3vr.gamelibs.0.104.0-r.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\harmonyx\\2.10.0\\harmonyx.2.10.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",

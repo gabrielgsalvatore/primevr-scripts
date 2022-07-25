@@ -14,7 +14,7 @@
           "lib/net35/BepInEx.dll": {}
         }
       },
-      "BepInEx.Core/6.0.0-be.570": {
+      "BepInEx.Core/6.0.0-be.572": {
         "type": "package",
         "dependencies": {
           "HarmonyX": "2.10.0",
@@ -34,10 +34,10 @@
           "build/BepInEx.PluginInfoProps.props": {}
         }
       },
-      "BepInEx.Unity/6.0.0-be.570": {
+      "BepInEx.Unity/6.0.0-be.572": {
         "type": "package",
         "dependencies": {
-          "BepInEx.Core": "6.0.0-be.570",
+          "BepInEx.Core": "6.0.0-be.572",
           "HarmonyX": "2.10.0",
           "UnityEngine": "5.6.1"
         },
@@ -209,13 +209,13 @@
         "lib/netstandard2.0/BepInEx.dll"
       ]
     },
-    "BepInEx.Core/6.0.0-be.570": {
-      "sha512": "kygIunLrK1HMGcRo2E/7e4ZEAA0xewuB/j5mPoMi7Xk58GUi43XnclBJHif9x05a55s0kFkfKOrpwIRmjd0cDw==",
+    "BepInEx.Core/6.0.0-be.572": {
+      "sha512": "c+i0oJKjRMbGxxeFzJpxZVP5Vmf7dS5lFgQK2LKb46aiuE96vfOxN4WQzysiptCRz/sz8b8kTv/KQoCYmhP6NQ==",
       "type": "package",
-      "path": "bepinex.core/6.0.0-be.570",
+      "path": "bepinex.core/6.0.0-be.572",
       "files": [
         ".nupkg.metadata",
-        "bepinex.core.6.0.0-be.570.nupkg.sha512",
+        "bepinex.core.6.0.0-be.572.nupkg.sha512",
         "bepinex.core.nuspec",
         "lib/net35/BepInEx.Core.dll",
         "lib/net35/BepInEx.Core.xml",
@@ -237,13 +237,13 @@
         "build/BepInEx.PluginInfoProps.props"
       ]
     },
-    "BepInEx.Unity/6.0.0-be.570": {
-      "sha512": "eFIu2meFYi9r4smph+qMe3F8F1dAL28+liHdAJCyNagi3YqVgfVjFFXGNGvKS1lu596pJUkmWnxXlxM+XqnpVw==",
+    "BepInEx.Unity/6.0.0-be.572": {
+      "sha512": "9WmfQPOeKa5b+H9t5h6sed5OAGEMg0vGd+UKWOX2CJ3igN3CjlWAdv1uIXKRUnKQYhgCjslnL7Qmk8S/Hn4Kdg==",
       "type": "package",
-      "path": "bepinex.unity/6.0.0-be.570",
+      "path": "bepinex.unity/6.0.0-be.572",
       "files": [
         ".nupkg.metadata",
-        "bepinex.unity.6.0.0-be.570.nupkg.sha512",
+        "bepinex.unity.6.0.0-be.572.nupkg.sha512",
         "bepinex.unity.nuspec",
         "lib/net35/BepInEx.Unity.dll",
         "lib/net35/BepInEx.Unity.xml",
@@ -581,11 +581,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\source\\repos\\Project1\\Project1\\Project1.csproj",
+      "projectUniqueName": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\Project1.csproj",
       "projectName": "PrimeVrLematScripts",
-      "projectPath": "C:\\Users\\gabri\\source\\repos\\Project1\\Project1\\Project1.csproj",
+      "projectPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\Project1.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\source\\repos\\Project1\\Project1\\obj\\",
+      "outputPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
