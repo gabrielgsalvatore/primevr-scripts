@@ -1,0 +1,12 @@
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\bin\Debug\net35\PrimeVrScripts.dll
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\bin\Debug\net35\PrimeVrScripts.pdb
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Debug\net35\PrimeVrScripts.csproj.AssemblyReference.cache
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Debug\net35\PluginInfo.cs
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Debug\net35\PrimeVrScripts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Debug\net35\PrimeVrScripts.AssemblyInfoInputs.cache
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Debug\net35\PrimeVrScripts.AssemblyInfo.cs
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Debug\net35\PrimeVrScripts.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Debug\net35\PrimeVrScripts.dll
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Debug\net35\PrimeVrScripts.pdb
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\bin\Debug\net35\BepInEx.dll
+C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Debug\net35\PrimeVrScripts.csproj.CopyComplete
