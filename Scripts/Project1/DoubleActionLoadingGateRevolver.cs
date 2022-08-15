@@ -62,7 +62,7 @@ namespace PrimeVrScripts
         private bool m_shouldRecock;
         private bool DoesFiringRecock;
         private bool m_hasTriggerCycled;
-        private bool CanManuallyCockHammer;
+        public bool CanManuallyCockHammer;
         private bool m_isHammerLocked;
         private float m_hammerCurrentRot;
         private Vector2 RecockingSpeeds = new Vector2(8f, 3f);
@@ -70,6 +70,7 @@ namespace PrimeVrScripts
         public Transform RecockingPoint_Forward;
         public Transform RecockingPoint_Rearward;
         public float ejectedRoundOffset;
+
 
 
 #if !(MEATKIT || UNITY_EDITOR || UNITY_5)

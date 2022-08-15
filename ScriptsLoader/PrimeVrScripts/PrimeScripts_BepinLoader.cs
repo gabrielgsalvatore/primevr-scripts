@@ -2,6 +2,8 @@
 using BepInEx;
 using System.Collections.Generic;
 using System.IO;
+using HarmonyLib;
+using System.Reflection;
 
 namespace PrimeVrScripts
 {
@@ -28,11 +30,14 @@ namespace PrimeVrScripts
             {
                 Logger.LogInfo($"file.FullName: {file.FullName}");
                 if (file.FullName == PluginPath) continue;
-                System.Reflection.Assembly.LoadFrom(file.FullName);
+                Assembly loadedAssembly = Assembly.LoadFrom(file.FullName);
+                Harmony.CreateAndPatchAll(loadedAssembly);
                 LoadedPluginPaths.Add(file.FullName);
             }
+            
             Logger.LogInfo("PrimeScripts loaded!");
         }
+
     }
 }
 #endif

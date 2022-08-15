@@ -20,6 +20,18 @@
           "build/BepInEx.PluginInfoProps.props": {}
         }
       },
+      "HarmonyX/2.10.0": {
+        "type": "package",
+        "dependencies": {
+          "MonoMod.RuntimeDetour": "22.3.23.4"
+        },
+        "compile": {
+          "lib/net35/0Harmony.dll": {}
+        },
+        "runtime": {
+          "lib/net35/0Harmony.dll": {}
+        }
+      },
       "Microsoft.NETFramework.ReferenceAssemblies/1.0.2": {
         "type": "package",
         "dependencies": {
@@ -30,6 +42,52 @@
         "type": "package",
         "build": {
           "build/Microsoft.NETFramework.ReferenceAssemblies.net35.targets": {}
+        }
+      },
+      "Mono.Cecil/0.10.4": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Mono.Cecil.Mdb.dll": {},
+          "lib/net35/Mono.Cecil.Pdb.dll": {},
+          "lib/net35/Mono.Cecil.Rocks.dll": {},
+          "lib/net35/Mono.Cecil.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Mono.Cecil.Mdb.dll": {},
+          "lib/net35/Mono.Cecil.Pdb.dll": {},
+          "lib/net35/Mono.Cecil.Rocks.dll": {},
+          "lib/net35/Mono.Cecil.dll": {}
+        }
+      },
+      "MonoMod.RuntimeDetour/22.3.23.4": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.10.4",
+          "MonoMod.Utils": "22.3.23.4"
+        },
+        "frameworkAssemblies": [
+          "System"
+        ],
+        "compile": {
+          "lib/net35/MonoMod.RuntimeDetour.dll": {}
+        },
+        "runtime": {
+          "lib/net35/MonoMod.RuntimeDetour.dll": {}
+        }
+      },
+      "MonoMod.Utils/22.3.23.4": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.10.4"
+        },
+        "frameworkAssemblies": [
+          "System"
+        ],
+        "compile": {
+          "lib/net35/MonoMod.Utils.dll": {}
+        },
+        "runtime": {
+          "lib/net35/MonoMod.Utils.dll": {}
         }
       },
       "UnityEngine.Modules/5.6.3": {
@@ -81,6 +139,25 @@
         "bepinex.plugininfoprops.1.1.0.nupkg.sha512",
         "bepinex.plugininfoprops.nuspec",
         "build/BepInEx.PluginInfoProps.props"
+      ]
+    },
+    "HarmonyX/2.10.0": {
+      "sha512": "4ayiy/dlCiW86K2N7Jvbf+VpI5wvP7dncv/6oRmfwRi32UCmCRzCGzsxdMfzJZkp6/26oBW+DrD8vi4UejzVAg==",
+      "type": "package",
+      "path": "harmonyx/2.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "harmonyx.2.10.0.nupkg.sha512",
+        "harmonyx.nuspec",
+        "lib/net35/0Harmony.dll",
+        "lib/net35/0Harmony.xml",
+        "lib/net45/0Harmony.dll",
+        "lib/net45/0Harmony.xml",
+        "lib/netstandard2.0/0Harmony.dll",
+        "lib/netstandard2.0/0Harmony.xml",
+        "logo_mini.png"
       ]
     },
     "Microsoft.NETFramework.ReferenceAssemblies/1.0.2": {
@@ -244,6 +321,67 @@
         "microsoft.netframework.referenceassemblies.net35.nuspec"
       ]
     },
+    "Mono.Cecil/0.10.4": {
+      "sha512": "BHukPf7zfXu+akTcFEAWvU4x3hVMMIDC+ihGAl/+8OozrY0f/ajrpuaSUf2Q3Xvgsge5NryvOkjtyhV5TNXoSg==",
+      "type": "package",
+      "path": "mono.cecil/0.10.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Mono.Cecil.Mdb.dll",
+        "lib/net35/Mono.Cecil.Pdb.dll",
+        "lib/net35/Mono.Cecil.Rocks.dll",
+        "lib/net35/Mono.Cecil.dll",
+        "lib/net40/Mono.Cecil.Mdb.dll",
+        "lib/net40/Mono.Cecil.Pdb.dll",
+        "lib/net40/Mono.Cecil.Rocks.dll",
+        "lib/net40/Mono.Cecil.dll",
+        "lib/netstandard1.3/Mono.Cecil.Mdb.dll",
+        "lib/netstandard1.3/Mono.Cecil.Pdb.dll",
+        "lib/netstandard1.3/Mono.Cecil.Rocks.dll",
+        "lib/netstandard1.3/Mono.Cecil.dll",
+        "mono.cecil.0.10.4.nupkg.sha512",
+        "mono.cecil.nuspec"
+      ]
+    },
+    "MonoMod.RuntimeDetour/22.3.23.4": {
+      "sha512": "2nwwFfwYDSgUzhi+1MutTg1gyUgXoMS4+E04vHOFp84Vxs0oBkkn4mGAfhkr272y0j3vqIBzo2aT9pXRlCd/ZA==",
+      "type": "package",
+      "path": "monomod.runtimedetour/22.3.23.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/MonoMod.RuntimeDetour.dll",
+        "lib/net35/MonoMod.RuntimeDetour.xml",
+        "lib/net452/MonoMod.RuntimeDetour.dll",
+        "lib/net452/MonoMod.RuntimeDetour.xml",
+        "lib/net5.0/MonoMod.RuntimeDetour.dll",
+        "lib/net5.0/MonoMod.RuntimeDetour.xml",
+        "lib/netstandard2.0/MonoMod.RuntimeDetour.dll",
+        "lib/netstandard2.0/MonoMod.RuntimeDetour.xml",
+        "monomod.runtimedetour.22.3.23.4.nupkg.sha512",
+        "monomod.runtimedetour.nuspec"
+      ]
+    },
+    "MonoMod.Utils/22.3.23.4": {
+      "sha512": "xso1rHFfcsPy3X1kj2uDk115z9tLTMxPEnba/zdNB6WazvrLRWGPuV9d4hHwr1iVz5quTFlZCbLBlE5fS2TqLA==",
+      "type": "package",
+      "path": "monomod.utils/22.3.23.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/MonoMod.Utils.dll",
+        "lib/net35/MonoMod.Utils.xml",
+        "lib/net452/MonoMod.Utils.dll",
+        "lib/net452/MonoMod.Utils.xml",
+        "lib/net5.0/MonoMod.Utils.dll",
+        "lib/net5.0/MonoMod.Utils.xml",
+        "lib/netstandard2.0/MonoMod.Utils.dll",
+        "lib/netstandard2.0/MonoMod.Utils.xml",
+        "monomod.utils.22.3.23.4.nupkg.sha512",
+        "monomod.utils.nuspec"
+      ]
+    },
     "UnityEngine.Modules/5.6.3": {
       "sha512": "Rsmdq9sVxG6cHe1Yw6VLWIqWuNqFyULE4gYs8HStZoqbtC8nIlkfmAGdzH4NItIx/L3eXBrMEgzHTJeQ4ZH3oQ==",
       "type": "package",
@@ -263,6 +401,7 @@
       "BepInEx.Analyzers >= 1.*",
       "BepInEx.BaseLib >= 5.4.19",
       "BepInEx.PluginInfoProps >= 1.*",
+      "HarmonyX >= 2.10.0",
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.2",
       "UnityEngine.Modules >= 5.6.3"
     ]
@@ -273,11 +412,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Desenvolvimento\\Mods H3VR\\PrimeVrScripts\\PrimeVrScripts\\PrimeVrScripts.csproj",
+      "projectUniqueName": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\ScriptsLoader\\PrimeVrScripts\\PrimeVrScripts.csproj",
       "projectName": "PrimeVrScripts",
-      "projectPath": "C:\\Desenvolvimento\\Mods H3VR\\PrimeVrScripts\\PrimeVrScripts\\PrimeVrScripts.csproj",
+      "projectPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\ScriptsLoader\\PrimeVrScripts\\PrimeVrScripts.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Desenvolvimento\\Mods H3VR\\PrimeVrScripts\\PrimeVrScripts\\obj\\",
+      "outputPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\ScriptsLoader\\PrimeVrScripts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -319,6 +458,10 @@
           "BepInEx.PluginInfoProps": {
             "target": "Package",
             "version": "[1.*, )"
+          },
+          "HarmonyX": {
+            "target": "Package",
+            "version": "[2.10.0, )"
           },
           "Microsoft.NETFramework.ReferenceAssemblies": {
             "suppressParent": "All",

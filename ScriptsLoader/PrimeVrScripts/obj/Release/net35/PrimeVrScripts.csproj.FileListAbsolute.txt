@@ -10,3 +10,22 @@ C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Release\net35\Pri
 C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.csproj.CopyComplete
 C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.dll
 C:\Desenvolvimento\Mods H3VR\PrimeVrScripts\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.pdb
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\PrimeVrScripts.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\PrimeVrScripts.pdb
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\BepInEx.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\0Harmony.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\Mono.Cecil.Mdb.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\Mono.Cecil.Pdb.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\Mono.Cecil.Rocks.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\Mono.Cecil.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\MonoMod.RuntimeDetour.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\bin\Release\net35\MonoMod.Utils.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.csproj.AssemblyReference.cache
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\obj\Release\net35\PluginInfo.cs
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.AssemblyInfoInputs.cache
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.AssemblyInfo.cs
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.csproj.CopyComplete
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.dll
+C:\Desenvolvimento\ModsH3VR\primevr-scripts\ScriptsLoader\PrimeVrScripts\obj\Release\net35\PrimeVrScripts.pdb

@@ -152,16 +152,11 @@ namespace PrimeVrScripts
 			if (this.state == State.Open && this.last_state != State.Open)
 			{
 				audioSource.PlayOneShot(openSound);
-				{
-					this.m_hand.Buzz(this.m_hand.Buzzer.Buzz_OnMenuOption);
-				}
 			}
 			if (this.state == State.Closed && this.last_state != State.Closed)
 			{
 				audioSource.PlayOneShot(closeSound);
-				{
-					this.m_hand.Buzz(this.m_hand.Buzzer.Buzz_OnMenuOption);
-				}
+				this.m_hand.Buzz(this.m_hand.Buzzer.Buzz_OnHoverInventorySlot);
 			}
 			this.last_state = this.state;
 		}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Desenvolvimento\\Mods H3VR\\PrimeVrScripts\\PrimeVrScripts\\PrimeVrScripts.csproj": {}
+    "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\ScriptsLoader\\PrimeVrScripts\\PrimeVrScripts.csproj": {}
   },
   "projects": {
-    "C:\\Desenvolvimento\\Mods H3VR\\PrimeVrScripts\\PrimeVrScripts\\PrimeVrScripts.csproj": {
+    "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\ScriptsLoader\\PrimeVrScripts\\PrimeVrScripts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desenvolvimento\\Mods H3VR\\PrimeVrScripts\\PrimeVrScripts\\PrimeVrScripts.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\ScriptsLoader\\PrimeVrScripts\\PrimeVrScripts.csproj",
         "projectName": "PrimeVrScripts",
-        "projectPath": "C:\\Desenvolvimento\\Mods H3VR\\PrimeVrScripts\\PrimeVrScripts\\PrimeVrScripts.csproj",
+        "projectPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\ScriptsLoader\\PrimeVrScripts\\PrimeVrScripts.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Desenvolvimento\\Mods H3VR\\PrimeVrScripts\\PrimeVrScripts\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\ScriptsLoader\\PrimeVrScripts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,6 +53,10 @@
             "BepInEx.PluginInfoProps": {
               "target": "Package",
               "version": "[1.*, )"
+            },
+            "HarmonyX": {
+              "target": "Package",
+              "version": "[2.10.0, )"
             },
             "Microsoft.NETFramework.ReferenceAssemblies": {
               "suppressParent": "All",
