@@ -63,7 +63,7 @@ namespace PrimeVrScripts
         private bool DoesFiringRecock;
         private bool m_hasTriggerCycled;
         private bool m_hasChamberCycled;
-        private bool CanManuallyCockHammer;
+        private bool CanManuallyCockHammer = false;
         private bool m_isHammerLocked;
         private float m_hammerCurrentRot;
         private Vector2 RecockingSpeeds = new Vector2(8f, 3f);
@@ -192,12 +192,6 @@ namespace PrimeVrScripts
 
         private void UpdateTriggerHammer()
         {
-            if (this.IsHeld && !this.m_isStateToggled && !this.m_isHammerCocked && !this.m_isHammerCocking && (Object)this.m_hand.OtherHand != (Object)null)
-            {
-                Vector3 velLinearWorld = this.m_hand.OtherHand.Input.VelLinearWorld;
-                if ((double)Vector3.Distance(this.m_hand.OtherHand.PalmTransform.position, this.HammerFanDir.position) < 0.150000005960464 && (double)Vector3.Angle(velLinearWorld, this.HammerFanDir.forward) < 60.0 && (double)velLinearWorld.magnitude > 1.0)
-                    this.CockHammer(10f);
-            }
             if (this.m_hasTriggeredUpSinceBegin && !this.m_isSpinning && !this.m_isStateToggled)
             {
                 this.m_tarTriggerFloat = this.m_hand.Input.TriggerFloat;

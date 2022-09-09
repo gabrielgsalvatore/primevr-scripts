@@ -70,6 +70,7 @@ namespace PrimeVrScripts
         public Transform RecockingPoint_Forward;
         public Transform RecockingPoint_Rearward;
         public float ejectedRoundOffset;
+        public bool doesToggleStateHalfRotatesCylinder;
 
 
 
@@ -148,7 +149,7 @@ namespace PrimeVrScripts
                         this.m_isSpinning = true;
                     if (hand.IsInStreamlinedMode)
                     {
-                        if (hand.Input.AXButtonDown)
+                        if (hand.Input.AXButtonDown && this.CanManuallyCockHammer)
                             this.CockHammer(5f);
                         if (hand.Input.BYButtonDown && this.StateToggles)
                         {
@@ -158,7 +159,7 @@ namespace PrimeVrScripts
                     }
                     else if (hand.Input.TouchpadDown)
                     {
-                        if ((double)Vector2.Angle(hand.Input.TouchpadAxes, Vector2.down) < 45.0)
+                        if ((double)Vector2.Angle(hand.Input.TouchpadAxes, Vector2.down) < 45.0 && this.CanManuallyCockHammer)
                             this.CockHammer(5f);
                         else if ((double)Vector2.Angle(hand.Input.TouchpadAxes, Vector2.left) < 45.0 && this.StateToggles)
                         {
@@ -353,6 +354,8 @@ namespace PrimeVrScripts
         {
             if (this.m_isHammerLocked)
                 this.m_tarChamberLerp = 1f;
+            else if (!this.m_hasTriggerCycled && this.doesToggleStateHalfRotatesCylinder && this.m_isStateToggled)
+                this.m_tarChamberLerp = 0.5f;
             else if (!this.m_hasTriggerCycled)
                 this.m_tarChamberLerp = this.m_curTriggerFloat * 1.4f;
             this.m_curChamberLerp = Mathf.Lerp(this.m_curChamberLerp, this.m_tarChamberLerp, Time.deltaTime * 16f);
