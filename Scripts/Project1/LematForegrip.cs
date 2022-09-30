@@ -38,23 +38,18 @@ namespace PrimeVrScripts
 		public override void FVRUpdate()
 		{
 			base.FVRUpdate();
-			if (Vector3.Distance(this.Hinge.transform.localPosition, this.localPosStart) > 0.01f)
-			{
-				this.Hinge.transform.localPosition = this.localPosStart;
-			}
+			if ((double)Vector3.Distance(this.Hinge.transform.localPosition, this.localPosStart) <= 0.00999999977648258)
+				return;
+			this.Hinge.transform.localPosition = this.localPosStart;
 		}
 
 		public override void FVRFixedUpdate()
 		{
 			base.FVRFixedUpdate();
 			if (this.WepRef.IsHeld && this.WepRef.IsAltHeld)
-			{
-				this.RB.mass = 0.001f;
-			}
+				this.RB.mass = 1f / 1000f;
 			else
-			{
 				this.RB.mass = 0.1f;
-			}
 		}
 
 		public override bool IsInteractable()
@@ -70,32 +65,29 @@ namespace PrimeVrScripts
 		public override void UpdateInteraction(FVRViveHand hand)
 		{
 			base.UpdateInteraction(hand);
-			Vector3 vector = hand.Input.Pos - this.Hinge.transform.position;
-			Vector3 vector2 = Vector3.ProjectOnPlane(vector, this.ShotgunBase.right);
-			if (Vector3.Angle(vector2, -this.ShotgunBase.up) > 90f)
+			Vector3 from = Vector3.ProjectOnPlane(hand.Input.Pos - this.Hinge.transform.position, this.ShotgunBase.right);
+			if ((double)Vector3.Angle(from, -this.ShotgunBase.up) > 90.0)
+				from = this.ShotgunBase.forward;
+			if ((double)Vector3.Angle(from, this.ShotgunBase.forward) > 90.0)
+				from = -this.ShotgunBase.up;
+			float num = Vector3.Angle(from, this.ShotgunBase.forward);
+			this.Hinge.spring = this.Hinge.spring with
 			{
-				vector2 = this.ShotgunBase.forward;
-			}
-			if (Vector3.Angle(vector2, this.ShotgunBase.forward) > 90f)
-			{
-				vector2 = -this.ShotgunBase.up;
-			}
-			float num = Vector3.Angle(vector2, this.ShotgunBase.forward);
-			JointSpring spring = this.Hinge.spring;
-			spring.spring = 10f;
-			spring.damper = 0f;
-			spring.targetPosition = Mathf.Clamp(num, 0f, this.Hinge.limits.max);
-			this.Hinge.spring = spring;
+				spring = 10f,
+				damper = 0.0f,
+				targetPosition = Mathf.Clamp(num, 0.0f, this.Hinge.limits.max)
+			};
 			this.Hinge.transform.localPosition = this.localPosStart;
 		}
 
 		public override void EndInteraction(FVRViveHand hand)
 		{
-			JointSpring spring = this.Hinge.spring;
-			spring.spring = this.m_initialSpring;
-			spring.damper = this.m_initialDamp;
-			spring.targetPosition = 45f;
-			this.Hinge.spring = spring;
+			this.Hinge.spring = this.Hinge.spring with
+			{
+				spring = this.m_initialSpring,
+				damper = this.m_initialDamp,
+				targetPosition = 45f
+			};
 			base.EndInteraction(hand);
 		}
 #endif

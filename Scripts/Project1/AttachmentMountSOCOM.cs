@@ -11,15 +11,16 @@ namespace PrimeVrScripts
     {
         public Vector3[] startPosition;
         public Vector3[] alternatePosition;
-        public float[] startScale;
-        public float[] alternateScale;
         public FVRFireArmAttachmentMount[] attachmentsToMove;
-        public GameObject objectToDisable;
+        public FVRFireArmAttachmentMount smartLinkMount;
+        public Vector3 smartLinkAlternateScale;
+        public Vector3 smartLinkOriginalScale;
 
 
 #if !(MEATKIT || UNITY_EDITOR || UNITY_5)
         public void Awake()
         {
+            base.Awake();
             Hook();
         }
 
@@ -47,7 +48,14 @@ namespace PrimeVrScripts
                 {
                     if (attachment.name.Contains("SOCOM-Silencer"))
                     {
-                        this.objectToDisable.SetActive(false);
+                        for(var i = 0; i < this.attachmentsToMove.Length; i++)
+                        {
+                            this.attachmentsToMove[i].transform.localPosition = this.alternatePosition[i];
+                        }
+                        if (this.smartLinkMount.HasAttachmentsOnIt())
+                        {
+                            this.smartLinkMount.AttachmentsList[0].transform.localScale = this.smartLinkAlternateScale;
+                        }
                     }
                 }
                 orig(self, attachment);
@@ -65,7 +73,14 @@ namespace PrimeVrScripts
                 {
                     if (attachment.name.Contains("SOCOM-Silencer"))
                     {
-                        this.objectToDisable.SetActive(true);
+                        for (var i = 0; i < this.attachmentsToMove.Length; i++)
+                        {
+                            this.attachmentsToMove[i].transform.localPosition = this.startPosition[i];
+                        }
+                        if (this.smartLinkMount.HasAttachmentsOnIt())
+                        {
+                            this.smartLinkMount.AttachmentsList[0].transform.localScale = smartLinkOriginalScale;
+                        }
                     }
                 }
                 orig(self, attachment);

@@ -149,8 +149,6 @@ namespace PrimeVrScripts
                         this.m_isSpinning = true;
                     if (hand.IsInStreamlinedMode)
                     {
-                        if (hand.Input.AXButtonDown && this.CanManuallyCockHammer)
-                            this.CockHammer(5f);
                         if (hand.Input.BYButtonDown && this.StateToggles)
                         {
                             this.ToggleState();
@@ -159,9 +157,7 @@ namespace PrimeVrScripts
                     }
                     else if (hand.Input.TouchpadDown)
                     {
-                        if ((double)Vector2.Angle(hand.Input.TouchpadAxes, Vector2.down) < 45.0 && this.CanManuallyCockHammer)
-                            this.CockHammer(5f);
-                        else if ((double)Vector2.Angle(hand.Input.TouchpadAxes, Vector2.left) < 45.0 && this.StateToggles)
+                        if ((double)Vector2.Angle(hand.Input.TouchpadAxes, Vector2.left) < 45.0 && this.StateToggles)
                         {
                             this.ToggleState();
                             this.PlayAudioEvent(FirearmAudioEventType.BreachOpen);
@@ -318,20 +314,18 @@ namespace PrimeVrScripts
                     bool flag2 = false;
                     if (this.DoesFiringRecock && this.m_recockingState != Revolver.RecockingState.Forward)
                         flag2 = true;
-                    if (!this.IsAltHeld && !flag2)
+                    if (!this.IsAltHeld && !flag2 && !this.m_isStateToggled)
                     {
                         if (this.m_hand.IsInStreamlinedMode)
                         {
                             if (this.m_hand.Input.AXButtonDown)
                             {
-                                this.m_isHammerLocked = true;
-                                this.PlayAudioEvent(FirearmAudioEventType.Prefire);
+                                this.CockHammer(5f);
                             }
                         }
                         else if (this.m_hand.Input.TouchpadDown && (double)Vector2.Angle(this.m_hand.Input.TouchpadAxes, Vector2.down) < 45.0)
                         {
-                            this.m_isHammerLocked = true;
-                            this.PlayAudioEvent(FirearmAudioEventType.Prefire);
+                            this.CockHammer(5f);
                         }
                     }
                 }
@@ -454,7 +448,7 @@ namespace PrimeVrScripts
 
         private void CockHammer(float speed)
         {
-            if (this.m_isHammerLocked || this.m_isHammerCocking)
+            if (this.m_isHammerLocked || this.m_isHammerCocking || this.m_isStateToggled)
                 return;
             this.m_isHammerLocked = true;
             this.PlayAudioEvent(FirearmAudioEventType.Prefire);
