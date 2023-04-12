@@ -14,18 +14,22 @@
           "lib/net35/BepInEx.dll": {}
         }
       },
-      "BepInEx.Core/6.0.0-be.572": {
+      "BepInEx.Core/6.0.0-pre.1": {
         "type": "package",
         "dependencies": {
           "HarmonyX": "2.10.0",
-          "MonoMod.Utils": "22.3.23.4",
+          "MonoMod.Utils": "22.5.1.1",
           "SemanticVersioning": "2.0.2"
         },
         "compile": {
-          "lib/net35/BepInEx.Core.dll": {}
+          "lib/net35/BepInEx.Core.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/BepInEx.Core.dll": {}
+          "lib/net35/BepInEx.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "BepInEx.PluginInfoProps/1.1.0": {
@@ -34,18 +38,22 @@
           "build/BepInEx.PluginInfoProps.props": {}
         }
       },
-      "BepInEx.Unity/6.0.0-be.572": {
+      "BepInEx.Unity/6.0.0-pre.1": {
         "type": "package",
         "dependencies": {
-          "BepInEx.Core": "6.0.0-be.572",
+          "BepInEx.Core": "6.0.0-pre.1",
           "HarmonyX": "2.10.0",
           "UnityEngine": "5.6.1"
         },
         "compile": {
-          "lib/net35/BepInEx.Unity.dll": {}
+          "lib/net35/BepInEx.Unity.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/_._": {}
+          "lib/net35/_._": {
+            "related": ".xml"
+          }
         }
       },
       "H3VR.GameLibs/0.104.0-r.0": {
@@ -69,10 +77,14 @@
           "MonoMod.RuntimeDetour": "22.3.23.4"
         },
         "compile": {
-          "lib/net35/0Harmony.dll": {}
+          "lib/net35/0Harmony.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/0Harmony.dll": {}
+          "lib/net35/0Harmony.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.NETFramework.ReferenceAssemblies/1.0.2": {
@@ -112,10 +124,14 @@
           "System"
         ],
         "compile": {
-          "lib/net35/MonoMod.RuntimeDetour.dll": {}
+          "lib/net35/MonoMod.RuntimeDetour.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/MonoMod.RuntimeDetour.dll": {}
+          "lib/net35/MonoMod.RuntimeDetour.dll": {
+            "related": ".xml"
+          }
         }
       },
       "MonoMod.Utils/22.5.1.1": {
@@ -127,10 +143,14 @@
           "System"
         ],
         "compile": {
-          "lib/net35/MonoMod.Utils.dll": {}
+          "lib/net35/MonoMod.Utils.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/MonoMod.Utils.dll": {}
+          "lib/net35/MonoMod.Utils.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SemanticVersioning/2.0.2": {
@@ -151,10 +171,14 @@
           "UnityEngine": "5.6.1"
         },
         "compile": {
-          "lib/net35/Sodalite.dll": {}
+          "lib/net35/Sodalite.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/Sodalite.dll": {}
+          "lib/net35/Sodalite.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Sodalite.Patcher/1.1.1": {
@@ -209,13 +233,13 @@
         "lib/netstandard2.0/BepInEx.dll"
       ]
     },
-    "BepInEx.Core/6.0.0-be.572": {
-      "sha512": "c+i0oJKjRMbGxxeFzJpxZVP5Vmf7dS5lFgQK2LKb46aiuE96vfOxN4WQzysiptCRz/sz8b8kTv/KQoCYmhP6NQ==",
+    "BepInEx.Core/6.0.0-pre.1": {
+      "sha512": "oTLuVxw7C7z6sQRbdDPd0118afGto975zI5NR+kZaccnLfbYnriXYuUorKg9+KAmpbaQmfBLVoWEpLXf9l1lSA==",
       "type": "package",
-      "path": "bepinex.core/6.0.0-be.572",
+      "path": "bepinex.core/6.0.0-pre.1",
       "files": [
         ".nupkg.metadata",
-        "bepinex.core.6.0.0-be.572.nupkg.sha512",
+        "bepinex.core.6.0.0-pre.1.nupkg.sha512",
         "bepinex.core.nuspec",
         "lib/net35/BepInEx.Core.dll",
         "lib/net35/BepInEx.Core.xml",
@@ -237,13 +261,13 @@
         "build/BepInEx.PluginInfoProps.props"
       ]
     },
-    "BepInEx.Unity/6.0.0-be.572": {
-      "sha512": "9WmfQPOeKa5b+H9t5h6sed5OAGEMg0vGd+UKWOX2CJ3igN3CjlWAdv1uIXKRUnKQYhgCjslnL7Qmk8S/Hn4Kdg==",
+    "BepInEx.Unity/6.0.0-pre.1": {
+      "sha512": "e3WnHakgJeAn5IqwLt3AmFUHH/iycuBa/VcKW9o658CbJhMB0eETkPbvMMIrbPJnwDzfwfhUQb3B6QC4qwq0XA==",
       "type": "package",
-      "path": "bepinex.unity/6.0.0-be.572",
+      "path": "bepinex.unity/6.0.0-pre.1",
       "files": [
         ".nupkg.metadata",
-        "bepinex.unity.6.0.0-be.572.nupkg.sha512",
+        "bepinex.unity.6.0.0-pre.1.nupkg.sha512",
         "bepinex.unity.nuspec",
         "lib/net35/BepInEx.Unity.dll",
         "lib/net35/BepInEx.Unity.xml",
@@ -561,7 +585,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v3.5": [
-      "BepInEx.Analyzers >= 1.*",
+      "BepInEx.Analyzers >= 1.0.8",
       "BepInEx.BaseLib >= 5.4.19",
       "BepInEx.PluginInfoProps >= 1.*",
       "BepInEx.Unity >= 6.0.0-*",
@@ -576,28 +600,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {}
+    "C:\\Users\\Gabriel Salvador\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\Project1.csproj",
+      "projectUniqueName": "C:\\Desenvolvimento\\primevr-scripts\\Scripts\\Project1\\Project1.csproj",
       "projectName": "PrimeVrLematScripts",
-      "projectPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\Project1.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Desenvolvimento\\ModsH3VR\\primevr-scripts\\Scripts\\Project1\\obj\\",
+      "projectPath": "C:\\Desenvolvimento\\primevr-scripts\\Scripts\\Project1\\Project1.csproj",
+      "packagesPath": "C:\\Users\\Gabriel Salvador\\.nuget\\packages\\",
+      "outputPath": "C:\\Desenvolvimento\\primevr-scripts\\Scripts\\Project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gabriel Salvador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net35"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.bepinex.dev/v3/index.json": {}
+        "https://nuget.bepinex.dev/v3/index.json": {},
+        "https://www.nuget.org/api/v2": {}
       },
       "frameworks": {
         "net35": {
@@ -618,7 +641,7 @@
           "BepInEx.Analyzers": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[1.*, )"
+            "version": "[1.0.8, )"
           },
           "BepInEx.BaseLib": {
             "target": "Package",
@@ -667,7 +690,7 @@
             "version": "[5.6.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
